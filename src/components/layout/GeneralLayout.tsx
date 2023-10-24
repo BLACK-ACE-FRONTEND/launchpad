@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useEffect} from 'react';
-import {useLocation, Outlet, Router} from 'react-router-dom';
+
 
 import NavBar from './navbar/NavBar';
 import NewHome from './home/NewHome';
