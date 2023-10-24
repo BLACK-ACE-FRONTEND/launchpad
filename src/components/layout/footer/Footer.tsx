@@ -14,20 +14,20 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_first}>
-        <div className={styles.logo}>
-          <Image src={Logo} alt='Launchpad Logo' className={styles.logo_img} /> 
-        </div> 
-        <p className={styles.footer_p}>© {new Date().getFullYear()} Black Ace</p>
+        {/* <div className={styles.logo}> */}
+          {/* <Image src={Logo} alt='Launchpad Logo' className={styles.logo_img} />  */}
+        {/* </div>   */}
+        <p className={styles.footer_p}>© {new Date().getFullYear()} LaunchPad</p>
       </div>
 
       <div>
           <h4>
-            Join Our Platform{' '}
+            {/* Join Our Platform{' '} */}
           </h4>
       </div>
 
       <div>
-        <ul className={styles.socials_icons}>
+        {/* <ul className={styles.socials_icons}>
           <li>
           <Image src={emailIcon} alt='email icon' />
           </li>
@@ -40,12 +40,12 @@ const Footer: React.FC = () => {
           <li>
           <Image src={instagramIcon} alt='instagram icon' />
           </li>
-        </ul>
+        </ul> */}
         
       </div>
       <div>
         <p className={styles.footer_p_2}>
-          © {new Date().getFullYear()} Black Ace. All rights reserved.
+          © {new Date().getFullYear()} LaunchPad. All rights reserved.
         </p>
       </div>
     </footer>

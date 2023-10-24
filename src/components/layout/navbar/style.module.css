@@ -18,6 +18,17 @@
   /* max-width: 1440px; */ 
 }
 
+/*Motseki */
+.nav_log {
+  font-family: Nohemi;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0.015em;
+  text-align: left;
+  color:#0F9D58;
+}
+
 .logo_img {
   width: 177px;
   height: 37px; }

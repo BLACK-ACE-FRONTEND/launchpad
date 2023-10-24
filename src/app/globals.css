@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi"); 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +26,67 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+
+
+
+/* Motseki */
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .chat-height {
+    @apply h-[calc(100vh_-_8.125rem)] lg:h-[calc(100vh_-_5.625rem)];
+  }
+  .inbox-height {
+    @apply h-[calc(100vh_-_8.125rem)] lg:h-[calc(100vh_-_5.625rem)];
+  }
+}
+
+/* third-party libraries CSS */
+
+.tableCheckbox:checked ~ div span {
+  @apply opacity-100;
+}
+
+
+.taskCheckbox:checked ~ .box span {
+  @apply opacity-100;
+}
+.taskCheckbox:checked ~ p {
+  @apply line-through;
+}
+
+.custom-input-date::-webkit-calendar-picker-indicator {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+.custom-input-date-1::-webkit-calendar-picker-indicator {
+  background-image: url("/images/icon/icon-calendar.svg");
+}
+.custom-input-date-2::-webkit-calendar-picker-indicator {
+  background-image: url("/images/icon/icon-arrow-down.svg");
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.jvectormap-tip {
+  background-color: #F8FAFC!important;
+  font-family: Satoshi, sans-serif;;
+}
+
+.map-btn .jvectormap-container .jvectormap-zoomin {
+  right: 45px;
 }

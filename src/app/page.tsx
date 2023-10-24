@@ -1,14 +1,17 @@
 "use client"
 
 import GeneralLayout from '@/components/layout/GeneralLayout'
-import {Routes, Route, Navigate} from 'react-router-dom';
-import Image from 'next/image'
-import NavBar from '@/components/layout/navbar/NavBar';
+import { useRouter } from 'next/navigation'
+
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-0">
-         <GeneralLayout/>
-  </main>
+    <>
+      <div className="flex min-h-screen flex-col items-center justify-between p-0">
+        <GeneralLayout/>
+      </div>
+    </>
   )
 }

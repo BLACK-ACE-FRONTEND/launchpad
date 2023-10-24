@@ -8,7 +8,6 @@ import Logo from '../../../assets/img/Black-ace-logo.png.png';
 import {BiChevronDown, BiChevronUp} from 'react-icons/bi';
 import {FaChevronRight, FaArrowRight} from 'react-icons/fa';
 
-
 interface NavProps {
   mentorModal?: React.MouseEventHandler;
 }
@@ -36,12 +35,13 @@ const NavBar: React.FC<NavProps> = ({mentorModal}) => {
   });
   return (
     <>
-      <header className={styles.nav} style={{background: navbar}}>
-          <Image src={Logo} alt='Launchpad Logo' className={styles.logo_img} />
-       
+      <header className={styles.nav} style={{background: navbar}}> 
+          {/* <Image src={Logo} alt='Launchpad Logo' className={styles.logo_img} /> */}
+          <h2 className={styles.nav_log}>LaunchPad</h2>
+        
         <nav>
           <ul className={styles.nav_links}>
-            <li>
+            {/* <li>
                 STARTUPS
             </li>
 
@@ -63,7 +63,7 @@ const NavBar: React.FC<NavProps> = ({mentorModal}) => {
 
             <li>
                 SIGN UP
-            </li>
+            </li> */}
           </ul>
 
           {/* Mobile Menu */}
@@ -75,7 +75,7 @@ const NavBar: React.FC<NavProps> = ({mentorModal}) => {
           {openMenu && (
             <ul className={styles.menuItems}>
               <div className={styles.list}>
-                <li>
+                {/* <li>
                     STARTUPS
                 </li>
                 <li>
@@ -87,9 +87,9 @@ const NavBar: React.FC<NavProps> = ({mentorModal}) => {
                 </li>
                 <li>
                     HUBS
-                </li>
+                </li> */}
               </div>
-              <li className={styles.join_now}>
+              {/* <li className={styles.join_now}>
                   LOG IN
                   <FaArrowRight size={14} />
               </li>
@@ -97,7 +97,7 @@ const NavBar: React.FC<NavProps> = ({mentorModal}) => {
               <li className={styles.join_now}>
                   SIGN UP
                   <FaArrowRight size={14} />
-              </li>
+              </li>  */}
             </ul>
           )}
         </nav>
