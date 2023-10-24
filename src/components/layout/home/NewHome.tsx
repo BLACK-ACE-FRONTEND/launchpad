@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 import { useRouter } from 'next/navigation'
 
 
-const Home = () => {
+const NewHome = () => {
     const router = useRouter()
 
   return (
@@ -47,5 +47,5 @@ const Home = () => {
   )
 }
 
-export default Home
+export default NewHome
 
