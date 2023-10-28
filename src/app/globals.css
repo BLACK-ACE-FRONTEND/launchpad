@@ -5,9 +5,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  --foreground-rgb: #EBEBEB;
+  --background-start-rgb: #EBEBEB ;
+  --background-end-rgb: #EBEBEB;
 }
 
 @media (prefers-color-scheme: dark) {

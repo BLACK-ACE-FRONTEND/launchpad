@@ -3,10 +3,8 @@ import "./globals.css";
 import "./data-tables-css.css";
 import "./satoshi.css";
 import { useState, useEffect } from "react";
-import Loader from "@/components/common/Loader";
-import GeneralLayout from "@/components/layout/GeneralLayout";
-import Dashboard from "@/app/dashboard/page";
-// import {BrowserRouter} from 'react-router-dom';
+import Loader from "./components/common/Loader";
+
 
 export default function RootLayout({
   children,
@@ -28,10 +26,8 @@ export default function RootLayout({
             <Loader />
           ) : (
 
-            <>
-               {/* <GeneralLayout/> */}
+            <>     
                {children}
-
                </>
                
           )}
