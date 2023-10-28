@@ -1,9 +1,6 @@
 "use client"
 
 import React, {useEffect} from 'react';
-
-
-import NavBar from './navbar/NavBar';
 import NewHome from './home/NewHome';
 
 
@@ -18,12 +15,7 @@ const GeneralLayout: React.FC = (): JSX.Element => {
   // use
   return (
     <>
-      <NavBar/>   
-       <>
-        {/* <Outlet />  */}
        <NewHome/>
-      </>  
-       {/* <Footer/>     */}
     </>
   );
 };

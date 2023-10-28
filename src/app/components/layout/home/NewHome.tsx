@@ -2,14 +2,16 @@
 
 import React, {useEffect, useState} from 'react';
 import { useRouter } from 'next/navigation'
+import NavBar from '../navbar/NavBar';
 
 
 const NewHome = () => {
     const router = useRouter()
 
   return (
-
-    <div className="w-7/12 grid p-5 mx-10 border bg-gray-50 border-gray-500 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-1">
+<>
+    <NavBar/>
+    <div className="w-7/12 grid p-5 m-10 mx-10 border bg-gray-50 border-gray-500 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-1">
          <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Join As A User, Founder or Investor</h3>      
          </blockquote>
@@ -44,6 +46,7 @@ const NewHome = () => {
         </span></p>
 
      </div>
+     </>
 
   )
 }
