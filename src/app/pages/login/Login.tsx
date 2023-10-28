@@ -93,7 +93,7 @@ export default function Login() {
                 </button>
 
                 </div>
-                <p className='text-center'>Don't have an account? <span className='text-[#0F9D58]'>
+                <p className='text-center'>{`Don't have an account?`} <span className='text-[#0F9D58]'>
                 <button type='button' onClick={() => router.push ('/pages/signup')}> Sign up</button> 
                 </span></p>
                   </form>
