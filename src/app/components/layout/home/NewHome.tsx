@@ -11,12 +11,12 @@ const NewHome = () => {
   return (
 <>
     <NavBar/>
-    <div className="w-7/12 grid p-5 m-10 mx-10 border bg-gray-50 border-gray-500 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-1">
-         <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+    <div className="w-7/12 grid p-5 m-20 mx-10 border bg-gray-50 border-gray-500 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-1">
+         <blockquote className="max-w-2xl mx-auto mt-5 mb-5 text-gray-500 lg:mb-8 dark:text-gray-400">
                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Join As A User, Founder or Investor</h3>      
          </blockquote>
 
-        <div className="grid mb-8 border border-none rounded-lg gap-2 shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
+        <div className="grid mt-10 mb-10 border border-none rounded-lg gap-5 shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
             <figure className="flex w-auto flex-col items-end justify-center p-5 text-start bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
                 <input type="radio" value="Male" name="user"/> 
                 <blockquote className="max-w-2xl text-lg mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
@@ -41,7 +41,7 @@ const NewHome = () => {
 
        
 
-        <p className='text-center'>Already have an Account? <span className='text-[#0F9D58]'>
+        <p className='text-center mb-10'>Already have an Account? <span className='text-[#0F9D58]'>
          <button type='button' onClick={() => router.push ('/pages/login')}> Sign In</button> 
         </span></p>
 
