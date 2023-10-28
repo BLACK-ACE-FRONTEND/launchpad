@@ -1,9 +1,9 @@
 "use client"
 
 import React from 'react'
-import Sidebar from "@/components/Sidebar";
-import Header from "@/components/Header";
 import { useState, useEffect } from "react";
+import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
 
 const Dashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
