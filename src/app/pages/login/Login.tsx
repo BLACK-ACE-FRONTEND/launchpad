@@ -58,24 +58,23 @@ export default function Login() {
                   </div>
                   
                 <div className="flex justify-between">
-                    <div>
+                    <div className="flex flex-row gap-2">
                     <input type="checkbox" />
-                    <Link
+                    {/* <Link
                         href="/forget"
                         className="text-xs text-blue-600 hover:underline m-2"
                     >
                         Remember Me
-                    </Link>
+                    </Link> */}
+                     <p className='text-center'><span className='text-black'>
+                      Remember Me
+                    </span></p>
                     </div>
 
                     <div>
-                    <input type="checkbox" />
-                    <Link
-                        href="/forget"
-                        className="text-xs text-blue-600 hover:underline m-2"
-                    >
-                        Forget Password?
-                    </Link>
+                      <p className='text-center'><span className='text-black'>
+                      <button type='button' onClick={() => router.push ('/pages/forget-password')}> Forget Password?</button> 
+                      </span></p>
                     </div>
                 </div>
 
