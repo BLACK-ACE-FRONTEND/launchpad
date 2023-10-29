@@ -7,7 +7,7 @@ import backArrow from '../../assets/img/arrow-back.svg';
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-export default function ForgetPassword() {
+export default function PasswordReset() {
     const router = useRouter()
 
     return (
@@ -44,7 +44,9 @@ export default function ForgetPassword() {
                         <h1 className="text-3xl font-bold text-gray-700">
                             Forgot Password?
                             </h1>
-                            <p className="text-center">No worries, enter your email below, we will send you reset instructions.</p>
+                            <p className="text-center">
+                              Your new password must be different from previously used password.
+                            </p>
                 </div>
 
                 <form className="mt-6 mb-10">
@@ -53,7 +55,7 @@ export default function ForgetPassword() {
                     htmlFor="email"
                     className="block text-sm font-semibold text-gray-800"
                     >
-                    Email
+                    New Password
                     </label>
                     <input
                     type="email"
@@ -61,11 +63,22 @@ export default function ForgetPassword() {
                     />
                 </div>
 
+                <div className="mb-2">
+                      <label
+                      htmlFor="password"
+                      className="block text-sm font-semibold text-gray-800"
+                      >
+                      Confirm Password
+                      </label>
+                      <input
+                      type="password"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                      />
+                  </div>
+
                 <div className="mt-2">
-                    <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform 
-                    bg-[#0F9D58] rounded-md hover:bg-[#0F9D58] focus:outline-none focus:bg-gray-600"
-                    type='button' onClick={() => router.push ('/pages/reset-password')}>
-                    Send
+                    <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-[#0F9D58] rounded-md hover:bg-[#0F9D58] focus:outline-none focus:bg-gray-600">
+                    Reset
                     </button>
                 </div>
 

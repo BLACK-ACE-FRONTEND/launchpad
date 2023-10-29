@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link";
-import footerLogo from '../../assets/img/log.svg';
+import footerLogo from '../../assets/img/login-log.svg';
 import { useRouter } from 'next/navigation'
 
 import Image from 'next/image'
