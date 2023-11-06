@@ -2,6 +2,7 @@
 
 import React, {useEffect} from 'react';
 import NewHome from './home/NewHome';
+import Dashboard from '@/app/dashboard/page';
 
 
 
@@ -15,7 +16,8 @@ const GeneralLayout: React.FC = (): JSX.Element => {
   // use
   return (
     <>
-       <NewHome/>
+       {/* <NewHome/> */}
+       <Dashboard/>
     </>
   );
 };

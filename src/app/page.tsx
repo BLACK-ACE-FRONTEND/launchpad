@@ -7,9 +7,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex min-h-auto flex-col items-center justify-between p-0">  
+      {/* <div className="flex min-h-auto flex-col items-center justify-between p-0">   */}
         <GeneralLayout/>   
-      </div>  
+      {/* </div>   */}
     </>
   )
 }

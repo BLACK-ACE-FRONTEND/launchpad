@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/navigation'
 
 const DropdownUser = () => {
+  const router = useRouter()
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const trigger = useRef<any>(null);
@@ -36,29 +38,14 @@ const DropdownUser = () => {
 
   return (
     <div className="relative">
-      <Link
-        ref={trigger}
-        onClick={() => setDropdownOpen(!dropdownOpen)}
-        className="flex items-center gap-4"
-        href="#"
-      >
-
-        <span className="h-12 w-12 rounded-full">
-          <Image
-            width={112}
-            height={112}
-            src={"/images/user/user-01.png"}
-            alt="User"
-          />
-        </span>
-
-        <span className="hidden text-right lg:block">
-          <span className="block text-sm font-medium text-black dark:text-white">
-            Mercy Kalu
-          </span>
-          <span className="block text-xs">Patient</span>
-        </span>
-      </Link>
+       <div className="mt-2">
+        <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform 
+              bg-[#0F9D58] rounded-md hover:bg-[#0F9D58] focus:outline-none focus:bg-gray-600"
+                type='button' onClick={() => router.push ('/pages/reset-password')}>
+                  Connect Wallet
+                </button>
+          </div>
+                      
     </div>
   );
 };
