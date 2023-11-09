@@ -19,7 +19,7 @@ export default function Feed() {
     return (
       // <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden"> 
       <div className="relative flex flex-1 flex-col h-auto overflow-y-auto overflow-x-hidden"> 
-        <div  className="lg:flex lg:gap-x-4 justify-between items-start my-5 mx-2">
+        <div  className="lg:flex lg:gap-x-4 justify-around items-start my-5 mx-2">
 
          <div className="flex flex-col"> 
          <nav className="flex justify-between mx-2 text-lg font-normal">
