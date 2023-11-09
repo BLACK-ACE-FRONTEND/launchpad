@@ -19,17 +19,25 @@ export default function Feed() {
     return (
       // <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden"> 
       <div className="relative flex flex-1 flex-col h-auto overflow-y-auto overflow-x-hidden"> 
-        <div  className="lg:flex lg:gap-x-4 justify-center items-start my-5 mx-4">
+        <div  className="lg:flex lg:gap-x-4 justify-center items-start my-5 mx-2">
 
          <div className="flex flex-col"> 
-         <nav className="flex justify-between mx-5 text-lg font-normal">
+         <nav className="flex justify-between mx-2 text-lg font-normal">
             <ul className="flex gap-5">
               <li>For you</li>
               <li>Following</li>
             </ul>
 
             <ul>
-              <li className="flex text-end">Filter</li>
+              <li>
+              Filter
+              <select id="cat">
+                <option value="otherCat"></option>
+                {/* <option value="WordPress">WordPress</option> */}
+              </select>
+
+              <p id="result" /></li>
+
             </ul>
           </nav>
 
@@ -40,6 +48,7 @@ export default function Feed() {
 
 
           <div className="lg:max-w-xl w-full mb-5">
+          <div className="flex justify-between mr-10 items-center">
             <div className="flex gap-2 my-5">
               <Image
                     className="w-auto h-auto rounded-md"
@@ -54,6 +63,15 @@ export default function Feed() {
                 </h1>
                 <p>5 hours ago . oct 29, 2023</p>
                 </div>
+                </div>
+                
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 10.5C5.67157 10.5 5 11.1716 5 12C5 12.8284 5.67157 13.5 6.5 13.5C7.32843 13.5 8 12.8284 8 12C8 11.1716 7.32843 10.5 6.5 10.5Z" fill="black"/>
+                <path d="M11 12C11 11.1716 11.6716 10.5 12.5 10.5C13.3284 10.5 14 11.1716 14 12C14 12.8284 13.3284 13.5 12.5 13.5C11.6716 13.5 11 12.8284 11 12Z" fill="black"/>
+                <path d="M17 12C17 11.1716 17.6716 10.5 18.5 10.5C19.3284 10.5 20 11.1716 20 12C20 12.8284 19.3284 13.5 18.5 13.5C17.6716 13.5 17 12.8284 17 12Z" fill="black"/>
+                </svg>
+                
+
             </div>
 
             <div className="mx-8">
@@ -133,22 +151,30 @@ export default function Feed() {
           </svg>
 
           <div className="lg:max-w-xl w-full my-5">
-
-          <div className="flex gap-2 my-5">
-              <Image
+              <div className="flex justify-between mr-10 items-center">
+            <div className="flex gap-2 my-5">
+                 <Image
                     className="w-auto h-auto rounded-md"
                     src={teragtIcon} 
                     width={96}
                     height={96}
                     alt="sign up with image"
                 />
-            
               <div className="flex flex-col">
-                  <h1 className="text-sm font-bold text-start text-gray-700">
+              <h1 className="text-sm font-bold text-start text-gray-700">
                       Terah GT
                   </h1>
                   <p>6:07 PM . oct 27, 2023</p>
                 </div>
+                </div>
+                
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 10.5C5.67157 10.5 5 11.1716 5 12C5 12.8284 5.67157 13.5 6.5 13.5C7.32843 13.5 8 12.8284 8 12C8 11.1716 7.32843 10.5 6.5 10.5Z" fill="black"/>
+                <path d="M11 12C11 11.1716 11.6716 10.5 12.5 10.5C13.3284 10.5 14 11.1716 14 12C14 12.8284 13.3284 13.5 12.5 13.5C11.6716 13.5 11 12.8284 11 12Z" fill="black"/>
+                <path d="M17 12C17 11.1716 17.6716 10.5 18.5 10.5C19.3284 10.5 20 11.1716 20 12C20 12.8284 19.3284 13.5 18.5 13.5C17.6716 13.5 17 12.8284 17 12Z" fill="black"/>
+                </svg>
+                
+
             </div>
 
             <div className="mx-8">
@@ -230,23 +256,31 @@ export default function Feed() {
 
 
       <div className="lg:max-w-xl w-full my-5">
+        <div className="flex justify-between mr-10 items-center">
+            <div className="flex gap-2 my-5">
+                <Image
+                  className="w-auto h-auto rounded-md"
+                  src={eclipseIcon3} 
+                  width={96}
+                  height={96}
+                  alt="sign up with image"
+              />
+              <div className="flex flex-col">
+                        <h1 className="text-sm font-bold text-start text-gray-700">
+                      Pentile
+                  </h1>
+                  <p>11:09 AM . oct 19, 2023</p>
+                </div>
+                </div>
+                
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 10.5C5.67157 10.5 5 11.1716 5 12C5 12.8284 5.67157 13.5 6.5 13.5C7.32843 13.5 8 12.8284 8 12C8 11.1716 7.32843 10.5 6.5 10.5Z" fill="black"/>
+                <path d="M11 12C11 11.1716 11.6716 10.5 12.5 10.5C13.3284 10.5 14 11.1716 14 12C14 12.8284 13.3284 13.5 12.5 13.5C11.6716 13.5 11 12.8284 11 12Z" fill="black"/>
+                <path d="M17 12C17 11.1716 17.6716 10.5 18.5 10.5C19.3284 10.5 20 11.1716 20 12C20 12.8284 19.3284 13.5 18.5 13.5C17.6716 13.5 17 12.8284 17 12Z" fill="black"/>
+                </svg>
+                
 
-<div className="flex gap-2 my-5">
-    <Image
-          className="w-auto h-auto rounded-md"
-          src={eclipseIcon3} 
-          width={96}
-          height={96}
-          alt="sign up with image"
-      />
-  
-    <div className="flex flex-col">
-        <h1 className="text-sm font-bold text-start text-gray-700">
-            Pentile
-        </h1>
-        <p>11:09 AM . oct 19, 2023</p>
-      </div>
-  </div>
+            </div>
 
   <div className="mx-8">
   <p>Exciting news from our telecom startup! We are in the early stages of
@@ -329,7 +363,7 @@ export default function Feed() {
 
       
 
-          <div className="w-full bg-white rounded-md lg:max-w-xl">
+          <div className="w-auto bg-white rounded-md lg:max-w-xl">
           
             <div className="w-auto p-6  bg-white rounded-md shadow-md lg:max-w-xl"> 
                 <div className="flex flex-col justify-center items-start gap-5 ">
@@ -339,10 +373,11 @@ export default function Feed() {
                             </h1>
                             <div className="flex gap-5">
                               <Image
-                                className="object-cover rounded-md"
+                                // className="object-cover rounded-md"
+                                className="rounded-md"
                                 src={keyIcon} 
-                                width={96}
-                                height={96}
+                                width={43}
+                                height={43}
                                 alt="sign up with image"
                               /> 
                                 
@@ -356,10 +391,10 @@ export default function Feed() {
 
                             <div className="flex gap-5">
                               <Image
-                                className="object-cover rounded-md"
+                                className="rounded-md"
                                 src={ecliseIcon} 
-                                width={96}
-                                height={96}
+                                width={43}
+                                height={43}
                                 alt="sign up with image"
                               /> 
                               <div>
@@ -372,10 +407,10 @@ export default function Feed() {
 
                             <div className="flex gap-5">
                               <Image
-                                className="object-cover rounded-md"
+                                className="rounded-md"
                                 src={ecliseIcon1} 
-                                width={96}
-                                height={96}
+                                width={43}
+                                height={43}
                                 alt="sign up with image"
                               /> 
                                 
@@ -389,10 +424,10 @@ export default function Feed() {
 
                             <div className="flex gap-5">
                               <Image
-                                className="object-cover rounded-md"
+                                className="rounded-md"
                                 src={ecliseIcon2} 
-                                width={96}
-                                height={96}
+                                width={43}
+                                height={43}
                                 alt="sign up with image"
                               /> 
                                 
