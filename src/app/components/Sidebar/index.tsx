@@ -86,36 +86,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           <h2 className={styles.nav_log}>LaunchPad Logo</h2>
         </Link>
 
-        {/* Motseki */}
-        {/* <li>
-                <Link
-                  href="/profile"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("profile") && "bg-graydark dark:bg-meta-4"
-                  }`}
-                >
-                  <svg
-                    className="fill-current"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.0002 7.79065C11.0814 7.79065 12.7689 6.1594 12.7689 4.1344C12.7689 2.1094 11.0814 0.478149 9.0002 0.478149C6.91895 0.478149 5.23145 2.1094 5.23145 4.1344C5.23145 6.1594 6.91895 7.79065 9.0002 7.79065ZM9.0002 1.7719C10.3783 1.7719 11.5033 2.84065 11.5033 4.16252C11.5033 5.4844 10.3783 6.55315 9.0002 6.55315C7.62207 6.55315 6.49707 5.4844 6.49707 4.16252C6.49707 2.84065 7.62207 1.7719 9.0002 1.7719Z"
-                      fill=""
-                    />
-                    <path
-                      d="M10.8283 9.05627H7.17207C4.16269 9.05627 1.71582 11.5313 1.71582 14.5406V16.875C1.71582 17.2125 1.99707 17.5219 2.3627 17.5219C2.72832 17.5219 3.00957 17.2407 3.00957 16.875V14.5406C3.00957 12.2344 4.89394 10.3219 7.22832 10.3219H10.8564C13.1627 10.3219 15.0752 12.2063 15.0752 14.5406V16.875C15.0752 17.2125 15.3564 17.5219 15.7221 17.5219C16.0877 17.5219 16.3689 17.2407 16.3689 16.875V14.5406C16.2846 11.5313 13.8377 9.05627 10.8283 9.05627Z"
-                      fill=""
-                    />
-                  </svg>
-                  Profile
-                </Link>
-              </li> */}
-              {/* Motseki end */}
-
         <button
           ref={trigger}
           onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -154,43 +124,12 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             {/* <ul className="mb-6 flex flex-col gap-1.5"> */}
             <ul className="mb-0 flex flex-col gap-0">
               {/* <!-- Menu Item Dashboard --> */}
-              {/* <SidebarLinkGroup
-                activeCondition={
-                  pathname === "/" || pathname.includes("dashboard")
-                }
-              >
-                {(handleClick, open) => {
-                  return (
-                    <React.Fragment>
-                      <Link
-                        href="#"
-                        className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-normal text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                          (pathname === "/" ||
-                            pathname.includes("dashboard")) &&
-                          "bg-graydark dark:bg-meta-4"
-                        }`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          sidebarExpanded
-                            ? handleClick()
-                            : setSidebarExpanded(true);
-                        }}
-                      >
-                       
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.25 17.1431H3.75002C3.15706 17.1432 2.58657 16.9163 2.15557 16.5091C1.72457 16.1019 1.46573 15.5451 1.43216 14.9531L1.42859 14.8217V4.46456C1.42854 4.05733 1.58309 3.66526 1.861 3.3676C2.13891 3.06993 2.51945 2.88887 2.92573 2.86099L3.03573 2.85742H14.1072C14.5144 2.85737 14.9065 3.01192 15.2041 3.28983C15.5018 3.56774 15.6829 3.94829 15.7107 4.35456L15.7143 4.46456V5.00028H16.9643C17.3715 5.00023 17.7636 5.15478 18.0613 5.43269C18.3589 5.7106 18.54 6.09114 18.5679 6.49742L18.5714 6.60742V14.8217C18.5715 15.4147 18.3446 15.9852 17.9374 16.4162C17.5302 16.8472 16.9734 17.106 16.3814 17.1396L16.25 17.1431ZM3.75002 16.0717H16.25C16.5638 16.0717 16.8662 15.9536 17.097 15.741C17.3277 15.5283 17.4701 15.2366 17.4957 14.9239L17.5 14.8217V6.60742C17.5 6.47797 17.4531 6.35289 17.368 6.25533C17.283 6.15777 17.1654 6.09431 17.0372 6.07671L16.9643 6.07171H15.7143V13.7503C15.7143 13.8797 15.6674 14.0048 15.5823 14.1024C15.4972 14.1999 15.3797 14.2634 15.2514 14.281L15.1786 14.286C15.0491 14.286 14.9241 14.2391 14.8265 14.154C14.7289 14.0689 14.6655 13.9514 14.6479 13.8231L14.6429 13.7503V4.46456C14.6429 4.33511 14.596 4.21003 14.5109 4.11247C14.4258 4.01491 14.3083 3.95146 14.18 3.93385L14.1072 3.92885H3.03573C2.90628 3.92886 2.7812 3.97574 2.68364 4.06083C2.58608 4.14592 2.52262 4.26345 2.50502 4.39171L2.50002 4.46456V14.8217C2.50003 15.1354 2.618 15.4376 2.8305 15.6684C3.04301 15.8992 3.33452 16.0416 3.64716 16.0674L3.75002 16.0717ZM7.31859 9.28885C7.81145 9.28885 8.21145 9.68885 8.21145 10.1817V12.6789C8.21145 13.1717 7.81145 13.5717 7.31859 13.5717H4.82145C4.32859 13.5717 3.92859 13.1717 3.92859 12.6789V10.1817C3.92859 9.68885 4.32859 9.28885 4.82145 9.28885H7.31859ZM10.1786 12.5003H12.6757C12.8115 12.5003 12.9421 12.5519 13.0413 12.6445C13.1405 12.7372 13.2008 12.8641 13.21 12.9995C13.2193 13.1349 13.1768 13.2688 13.0911 13.3741C13.0055 13.4794 12.8831 13.5482 12.7486 13.5667L12.6757 13.5717H10.1786C10.0429 13.5717 9.9122 13.5201 9.81302 13.4274C9.71384 13.3348 9.65354 13.2079 9.64428 13.0725C9.63503 12.9371 9.67753 12.8032 9.76318 12.6979C9.84884 12.5926 9.97127 12.5238 10.1057 12.5053L10.1786 12.5003ZM7.14073 10.3603H5.00002V12.5003H7.14073V10.3603ZM10.1786 9.28885H12.6757C12.8115 9.28889 12.9421 9.34045 13.0413 9.43312C13.1405 9.52578 13.2008 9.65264 13.21 9.78805C13.2193 9.92347 13.1768 10.0573 13.0911 10.1626C13.0055 10.2679 12.8831 10.3368 12.7486 10.3553L12.6757 10.3603H10.1786C10.0419 10.3617 9.90983 10.3107 9.80946 10.2179C9.70908 10.1251 9.64798 9.99747 9.63867 9.86108C9.62936 9.7247 9.67254 9.58991 9.75937 9.48432C9.8462 9.37874 9.97011 9.31034 10.1057 9.29314L10.1786 9.28885ZM4.46145 6.06956H12.6757C12.8115 6.06961 12.9421 6.12117 13.0413 6.21383C13.1405 6.30649 13.2008 6.43335 13.21 6.56876C13.2193 6.70418 13.1768 6.83806 13.0911 6.94335C13.0055 7.04864 12.8831 7.11749 12.7486 7.13599L12.6757 7.14099H4.46145C4.32578 7.14077 4.19524 7.08908 4.0962 6.99636C3.99716 6.90364 3.93698 6.7768 3.92783 6.64144C3.91867 6.50608 3.96121 6.37228 4.04686 6.26707C4.13252 6.16185 4.2549 6.09306 4.3893 6.07456L4.46145 6.06956Z" fill="#0F9D58"/>
-                        </svg>
+             
 
-                        Feed
-                      </Link>
-                    </React.Fragment>
-                  );
-                }}
-              </SidebarLinkGroup> */}
-
-<li>
+            <li>
                 <Link
-                  href="/pages/feed"
+                  // href="/pages/feed"
+                  href="/"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-normal text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                     pathname.includes("pages") && "bg-graydark dark:bg-meta-4"
                   }`}
@@ -221,9 +160,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   Analysis
                 </Link>
               </li>
-              {/* <!-- Menu Item Calendar --> */}
-
-              {/* <!-- Menu Item Profile --> */}
+              
               <li>
                 <Link
                   href="/pages/events"
@@ -268,9 +205,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   Team
                 </Link>
               </li>
-              {/* <!-- Menu Item Tables --> */}
-
-              {/* <!-- Menu Item Settings --> */}
+            
               <li>
                 <Link
                   href="/settings"
@@ -306,7 +241,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               General
             </h3>
 
-            <ul className="mb-6 flex flex-col gap-0">
+            <ul className="mb-5 flex flex-col gap-0">
               {/* <!-- Menu Item Chart --> */}
               <li>
                 <Link
@@ -399,8 +334,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       </div>
 
       <button
-        // href="#"
-        // background: #0F9D58;
 
         className=  {`group relative flex bg-transparent border border-[#0F9D58] ... text-[#0F9D58] 
         items-center gap-2.5 rounded-sm py-2 m-5 px-4 font-semibold 
