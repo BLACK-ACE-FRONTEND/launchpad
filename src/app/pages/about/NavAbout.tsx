@@ -26,13 +26,13 @@ function NavAbout() {
                  to empower skilled professionals and create a more equitable landscape for talent.</p>
 
             <p>
-               The platform operates on blockchain technology, eliminating intermediaries and fostering 
+              { `The platform operates on blockchain technology, eliminating intermediaries and fostering 
                 direct connections between freelancers and the companies seeking their expertise. This 
                 direct connection not only ensures greater transparency but also results in fairer 
                 compensation for freelancers. 
                 One of the key innovations of Terah GT is its native token, TRHGT. This token incentivizes 
                 network participation, aligning the interests of all participants and ensuring that the 
-                community is invested in the platform's growth...</p>
+                community is invested in the platform's growth...`}</p>
         </div>
         
         
