@@ -241,8 +241,8 @@ function NavEvents() {
 </div>
 
 <div className="mx-8">
-<p>We dive into our financial plans and projects! We welcome your questions 
-  and can't wait to discuss the exciting details.</p>   
+<p>{`We dive into our financial plans and projects! We welcome your questions 
+  and can't wait to discuss the exciting details.`}</p>   
 
   <div className="flex gap-5 my-5"> 
       
